@@ -1,0 +1,125 @@
+body {
+    background-color: #29152C;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    background-color:#3B1E42;
+    width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid #F3B8C1; 
+}
+
+h2 {
+    font-size: 30px;
+    color: #F3B8C1;
+}
+
+.todo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 10px;
+    background-color: #F3B8C1;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.todo-row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #F3B8C1;
+}
+
+.todo-row input::placeholder {
+    color: #29152C;
+}
+
+.add-btn {
+    border: none;
+    outline: none;
+    padding: 16px 35px;
+    background-color: #29152C;
+    border-radius: 20px;
+    color: #F3B8C1;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    opacity: 99%;
+}
+
+.add-btn:active {
+    opacity: 98%;
+}
+
+ul {
+    align-self: flex-start;
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: row;
+    font-size:18px;
+    background-color: #F3B8C1;
+    margin-bottom: 10px;
+    color: #29152C;
+}
+
+
+
+ul li::before {
+    content: '';
+    background-image: url(images/unchecked.png);
+    width: 25px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block; 
+    margin-right: 10px;
+
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+}
+
+.delete {
+    content: "";
+    background-image: url(images/delete.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block; 
+    width: 18px;
+    height: 18px;
+}
